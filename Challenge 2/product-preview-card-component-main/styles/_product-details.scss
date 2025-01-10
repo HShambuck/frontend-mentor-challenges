@@ -1,0 +1,33 @@
+.product-details {
+  padding: 5px 20px;
+
+  h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    color: hsl(212, 21%, 14%);
+  }
+  p {
+    line-height: 1.5;
+  }
+  h5 {
+    font-weight: 550;
+    letter-spacing: 5px;
+    margin-bottom: -10px;
+  }
+  .price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .new-price {
+      font-size: 30px;
+      color: hsl(158, 36%, 37%);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .old-price {
+      text-decoration: line-through;
+      font-size: 14px;
+    }
+  }
+}

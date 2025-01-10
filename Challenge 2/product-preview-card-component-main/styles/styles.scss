@@ -1,10 +1,18 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}
+
+@import "./product-container";
+@import "./product-details";
+@import "./button";
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: hsl(30, 38%, 92%);
   color: hsl(228, 12%, 48%);
-
-  h1 {
-    font-family: 'Fraunces', serif;
-    color:  hsl(212, 21%, 14%);
-  }
+  font-weight: 550;
+  @include flexCenter(column);
 }
