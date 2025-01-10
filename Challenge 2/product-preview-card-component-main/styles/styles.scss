@@ -1,11 +1,7 @@
-@mixin flexCenter($direction) {
-  display: flex;
-  flex-direction: $direction;
-  align-items: center;
-  justify-content: center;
-}
+$breakpoint: 620px;
 
 @import "./product-container";
+@import "./product-image";
 @import "./product-details";
 @import "./button";
 
@@ -14,5 +10,10 @@ body {
   background: hsl(30, 38%, 92%);
   color: hsl(228, 12%, 48%);
   font-weight: 550;
-  @include flexCenter(column);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }

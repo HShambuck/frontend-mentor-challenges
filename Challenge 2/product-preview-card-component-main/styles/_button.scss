@@ -7,7 +7,18 @@ button {
   font-weight: 700;
   font-size: 14px;
   border-radius: 8px;
-  @include flexCenter(row);
+  display: flex;
+  justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: hsl(158, 36%, 31%);
+  }
+
+  &:focus {
+    background-color: hsl(158, 37%, 20%);
+  }
 }
+

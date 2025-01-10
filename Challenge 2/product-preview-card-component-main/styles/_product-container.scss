@@ -1,13 +1,16 @@
 .product-div {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    width: 375px;
-    margin-bottom: 20px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 375px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 
-    .product-image {
-      width: 100%;
-    }
-
-    
+  @media (min-width: $breakpoint) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 600px;
+    max-width: 900px;
   }
+}
