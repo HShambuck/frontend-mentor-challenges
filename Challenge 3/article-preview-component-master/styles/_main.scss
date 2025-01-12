@@ -1,16 +1,28 @@
 main {
-    width: 375px;
-    overflow: hidden;
-    background-color: white;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 375px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 
-    div {
-      img {
-        width: 100%;
+  display: block;
+
+  .wrapper {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      @media (min-width: $breakpoint) {
+        width: 122%;
+        height: 100%;
+        
       }
     }
-
-    
   }
+  @media (min-width: $breakpoint) {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    width: 680px;
+  }
+}

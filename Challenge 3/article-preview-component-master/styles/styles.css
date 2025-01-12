@@ -5,9 +5,26 @@ main {
   border-radius: 8px;
   margin-bottom: 20px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  display: block;
 }
-main div img {
+main .wrapper {
+  overflow: hidden;
+}
+main .wrapper img {
   width: 100%;
+}
+@media (min-width: 700px) {
+  main .wrapper img {
+    width: 122%;
+    height: 100%;
+  }
+}
+@media (min-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    width: 680px;
+  }
 }
 
 article {
@@ -61,4 +78,9 @@ body p {
   color: hsla(214, 17%, 51%, 0.8);
   font-weight: 550;
   line-height: 1.5;
+}
+@media (min-width: 700px) {
+  body {
+    height: 100vh;
+  }
 }/*# sourceMappingURL=styles.css.map */
