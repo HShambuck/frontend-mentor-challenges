@@ -1,3 +1,64 @@
+main {
+  width: 375px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+main div img {
+  width: 100%;
+}
+
+article {
+  padding: 30px;
+}
+article .content-div {
+  margin-bottom: 30px;
+}
+article .profile-div {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+}
+article .profile-div .avatar {
+  width: 40px;
+  border-radius: 50px;
+}
+article .profile-div div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+article .profile-div div p,
+article .profile-div div h4 {
+  margin: 0;
+  font-size: 12px;
+}
+article .profile-div .share-button {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  border: none;
+  justify-self: end;
+}
+
 body {
   font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body h1,
+body h4 {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+body p {
+  color: hsla(214, 17%, 51%, 0.8);
+  font-weight: 550;
+  line-height: 1.5;
 }/*# sourceMappingURL=styles.css.map */
