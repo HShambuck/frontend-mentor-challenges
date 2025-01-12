@@ -5,20 +5,16 @@ function handleProfileLinksChange(event) {
   const profile = document.getElementById("profile-div");
   const main = document.getElementById("main");
 
-  //Reference the share button and clone it
   const shareButton = document.getElementById("share-btn");
-  const newShareButton = shareButton.cloneNode(true);
 
   if (event.matches) {
-    // If screen width is >= 700px
     shareLinks.parentElement !== profile && profile.appendChild(shareLinks);
 
-    //Remove the share button if it exists
-    const existingButton = shareLinks.querySelector("#share-btn");
-    existingButton && existingButton.remove();
+    shareButton.style.display = "none";
   } else {
     shareLinks.parentNode !== main && main.appendChild(shareLinks);
-    !existingButton && shareLinks.appendChild(newShareButton);
+  
+    shareButton.style.display = "block";
   }
 }
 
