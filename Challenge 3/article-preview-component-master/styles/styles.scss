@@ -2,6 +2,9 @@ $breakpoint: 700px;
 
 @import "./main";
 @import "./article";
+@import './active';
+@import './buttons';
+
 
 body {
   font-family: "Manrope", sans-serif;

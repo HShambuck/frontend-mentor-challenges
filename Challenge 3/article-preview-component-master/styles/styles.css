@@ -6,6 +6,7 @@ main {
   margin-bottom: 20px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   display: block;
+  position: relative;
 }
 main .wrapper {
   overflow: hidden;
@@ -52,12 +53,40 @@ article .profile-div div h4 {
   margin: 0;
   font-size: 12px;
 }
-article .profile-div .share-button {
+
+.active-div {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: hsl(217, 19%, 35%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.active-div p {
+  color: hsl(212, 23%, 69%);
+  letter-spacing: 3px;
+}
+.share-button {
   height: 30px;
   width: 30px;
   border-radius: 50px;
   border: none;
   justify-self: end;
+}
+
+.media-button {
+  background: none;
+  border: none;
+}
+
+.active {
+  background-color: hsl(211, 18%, 54%);
+}
+.active svg path {
+  fill: hsl(0, 0%, 100%);
 }
 
 body {

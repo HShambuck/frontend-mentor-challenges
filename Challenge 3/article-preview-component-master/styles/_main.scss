@@ -5,8 +5,8 @@ main {
   border-radius: 8px;
   margin-bottom: 20px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-
   display: block;
+  position: relative;
 
   .wrapper {
     overflow: hidden;
@@ -16,10 +16,10 @@ main {
       @media (min-width: $breakpoint) {
         width: 122%;
         height: 100%;
-        
       }
     }
   }
+
   @media (min-width: $breakpoint) {
     display: grid;
     grid-template-columns: 2fr 3fr;
